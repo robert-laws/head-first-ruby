@@ -22,11 +22,12 @@ class Employee
     if value < 0
       raise "Salary of #{value} is not valid"
     end
+    @salary = value
   end
 
   def initialize(name = "Unknown", salary = 0.0)
-    @name = name
-    @salary = salary
+    self.name = name
+    self.salary = salary
   end
 
   def print_pay_stub
